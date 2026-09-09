@@ -1,0 +1,32 @@
+:root{
+  --papel:#EDECE7; --superficie:#F6F5F1; --ink:#14201F; --ink-soft:#4B5754;
+  --regla:#D5D3CB; --laton-txt:#7C551A; --pizarra-txt:#2E4A50;
+  --serif:"Spectral",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans","Helvetica Neue",-apple-system,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --medida:34rem;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --papel:#0F1514; --superficie:#171F1E; --ink:#E9E7E0; --ink-soft:#A4ACA9;
+    --regla:#28322F; --laton-txt:#D9A85F; --pizarra-txt:#84AEB6;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--papel); color:var(--ink);
+     font-family:var(--sans); font-size:1rem; line-height:1.62;
+     -webkit-font-smoothing:antialiased}
+main{max-width:var(--medida); margin:0 auto; padding:4rem 1.5rem 6rem}
+h1,h2{font-family:var(--serif); font-weight:600; text-wrap:balance; margin:0}
+h1{font-size:1.9rem; line-height:1.25}
+h2{font-size:1.12rem; margin:2.4rem 0 .5rem}
+p{margin:.85rem 0}
+a{color:var(--pizarra-txt)}
+.kicker{font-family:var(--mono); font-size:.68rem; font-weight:500;
+        letter-spacing:.14em; text-transform:uppercase; color:var(--laton-txt);
+        margin:0 0 .9rem}
+.entrada{font-family:var(--serif); font-size:1.24rem; line-height:1.55;
+         color:var(--ink-soft); margin:1.1rem 0 0}
+hr{border:0; border-top:1px solid var(--regla); margin:2.6rem 0}
+.pie{font-family:var(--mono); font-size:.76rem; line-height:1.9;
+     color:var(--ink-soft); margin-top:2.6rem}
